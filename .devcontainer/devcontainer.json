@@ -15,6 +15,9 @@
 	// "postCreateCommand": "yarn install",
 
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"mhutchie.git-graph",
+		"eamodio.gitlens"
+
 	]
 }
