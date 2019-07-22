@@ -1,0 +1,43 @@
+{
+  "name": "negm-api",
+  "version": "1.0.0",
+  "description": "### ESLint / Prettier - Installation",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "./node_modules/.bin/nodemon src/app.js",
+    "test": "./node_modules/.bin/jest --coverage",
+    "pretest": "./node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muichdistl/negm-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muichdistl/negm-api/issues"
+  },
+  "homepage": "https://github.com/muichdistl/negm-api#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.7.0",
+    "app-root-path": "^2.2.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "mongoose": "^5.6.5",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  }
+}
