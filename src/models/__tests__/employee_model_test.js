@@ -1,11 +1,8 @@
 const mongoose = require("mongoose");
-const winston = require("../../config/winston");
 const Employee = require("../employee_model");
-require("dotenv").config();
+const testConnection = require("../../helper/test_connection");
 
-mongoose.connect(process.env.MONGO_DB_TEST, { useNewUrlParser: true }, () => {
-  winston.info(`Connected to test database ${process.env.MONGO_DB_TEST}!`);
-});
+testConnection.connect();
 
 describe("Employee model test", () => {
   beforeAll(async () => {
